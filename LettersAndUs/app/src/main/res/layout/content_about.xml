@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/colorLight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ankush.lettersandus.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+
+<android.support.v7.widget.CardView
+    android:elevation="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:textColor="@color/colorPrimary"
+        android:text="This app is to wish a very special girl,\na very happy birthdday.\nHAPPY BIRTHDAY, thankyou for being there....\n and being so supportive"/>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>
