@@ -20,13 +20,13 @@ exports.makeUppercase = functions.database.ref('/messages/{userId}/{pushId}')
         }
     };
     let id = "";
-    if(letter.from === "ankush")
+    if(letter.from === "u1")
     {
-        console.log("got popo");
-        id = "popo";
+        console.log("got u1");
+        id = "u2";
     }else{
-        console.log("got ankush");
-        id = "ankush";
+        console.log("got u2");
+        id = "u1";
     }
     const refString = "/userData/"+id+"/notificationKey/";
     console.log(refString);
@@ -37,6 +37,4 @@ exports.makeUppercase = functions.database.ref('/messages/{userId}/{pushId}')
           return admin.messaging().sendToDevice(notificationKey.val(), payload);
         }
       });
-    // const notificationKey = 'fZzo_YU6U1k:APA91bFl6efqEsQsBCyP7wKEOCxGOFI4GOVz7TQtW_q5jIKfjR5qs5pO6hv3U0JFEviu3OgdCpBd6AjScsbIWcWqvGoyGFVw32CM-ZQgBWel3UNXRQlpkFbCSdfLQcEaKZ1SMV6k70Gu';
-    // return admin.messaging().sendToDevice(notificationKey, payload);
 });
